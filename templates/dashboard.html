@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome to Your Calorie Tracker</h2>
+
+    <form method="POST">
+        <label>How many calories have you eaten today?</label><br>
+        <input type="number" name="calories" required><br><br>
+        <button type="submit">Save</button>
+    </form>
+
+    <p>Today's calories: <strong>{{ calories }}</strong></p>
+
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
